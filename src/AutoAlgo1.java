@@ -342,7 +342,10 @@ public class AutoAlgo1 {
 					Lidar lidar0 = drone.lidars.get(0);
 					double lidar0Dist = lidar0.current_distance;
 					// CHANGE: added - if lidar0 (farward is beyond range, and far from colliding, continue that path.)
-					if (lidar0Dist >= WorldParams.lidarLimit - 10 && a > 100 && b > 100) {
+					//TODO: need to add what happens if he gets into a tzomet.
+					//TODO: maybe add a conditional that if lidar1 for example is seeing something not painted, then turn.
+					//TODO: maybe just check if one of the liadrs is maxed and other is not, if yes then turn.
+					if (lidar0Dist >= WorldParams.lidarLimit - 10 && a > 70 && b > 70) {
 						a = 0;
 						b = 0;
 					}
