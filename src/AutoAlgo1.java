@@ -345,6 +345,7 @@ public class AutoAlgo1 {
 					//TODO: need to add what happens if he gets into a tzomet.
 					//TODO: maybe add a conditional that if lidar1 for example is seeing something not painted, then turn.
 					//TODO: maybe just check if one of the liadrs is maxed and other is not, if yes then turn.
+					//TODO: maybe do a dynamic speed.
 					if (lidar0Dist >= WorldParams.lidarLimit - 10 && a > 70 && b > 70) {
 						a = 0;
 						b = 0;
